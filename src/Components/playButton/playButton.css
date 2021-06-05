@@ -1,0 +1,43 @@
+svg#play {
+    width: inherit;
+
+    display: block;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+}
+
+svg#play #triangle {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 500ms;
+}
+
+@keyframes example {
+    from {
+        fill: rgba(22, 22, 22, 0);
+        transform-origin: 50% 50%;
+    }
+    to {
+        fill: #A3CD3A;
+        transform-origin: 50% 50%;
+    }
+}
+
+svg #lineOne, svg #lineTwo {
+    transform-origin: 50% 50%;
+    transition: 1s;
+}
+
+svg:hover #lineOne {
+    transform: rotate(260deg);
+    -webkit-transform: rotate(260deg);
+    -moz-transform: rotate(260deg);
+    -o-transform: rotate(260deg);
+    transform-origin: 50% 50%;
+}
+
+svg:hover #lineTwo {
+    transform: rotate(-450deg);
+    transform-origin: 50% 50%;
+}

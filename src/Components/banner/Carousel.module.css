@@ -1,0 +1,67 @@
+.appendDots {
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    right: 25%;
+    fontSize: large;
+}
+
+.slideImg {
+    height: 400px;
+    margin: 0px 50px;
+    object-fit: cover;
+    position: relative;
+    animation-name: imageZoom;
+    animation-duration: 4s;
+}
+
+@keyframes imageZoom {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    position: relative;
+}
+
+.sliderText{
+    position: absolute;
+    color: yellow;
+    background: #0000005c;
+    border-radius: 15px;
+    padding: 0px 15px;
+    justify-content: flex-end;
+    right: 0;
+    transform: translate(-50%, 20px);
+}
+
+.playBtn {
+    position: absolute;
+    width: 100px;
+    bottom: 25px;
+    left: 10%;
+}
+
+@media screen and (max-width: 600px){
+    .slideImg {
+        height: 300px;
+        margin: 0px 50px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .slideImg {
+        height: 200px;
+        margin: 0;
+        object-fit: contain;
+    }
+
+}
