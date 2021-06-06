@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 import Slidecase from "./slidecase";
 
 const Showcase = (props) => {
@@ -45,13 +46,13 @@ const Showcase = (props) => {
         ]
     };
     return (
-        <div>
+        <Link to='/watch'>
             <Slider {...settings}>
                 {sections.map(item => (
                     <Slidecase key={item} {...item}/>
                 ))}
             </Slider>
-        </div>
+        </Link>
     );
 };
 

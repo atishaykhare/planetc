@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from "react-slick";
 
 import Slide from "./slide";
-import s from './Carousel.module.css';
 import banner1 from '../../Assets/Banner/banner1.jpg'
 import banner2 from '../../Assets/Banner/banner2.jpg'
 import banner3 from '../../Assets/Banner/banner3.jpg'
