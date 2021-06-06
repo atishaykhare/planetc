@@ -1,0 +1,105 @@
+.aBox {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+}
+
+.imgContainer {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.imgContainer img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -35px 0px 0px -70px;
+}
+
+.innerSkew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 8deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 180px;
+    width: 180px;
+    transition: 500ms;
+}
+
+.playButton{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.imgContainer:hover .innerSkew{
+    transform: skew(0deg, 0deg);
+}
+
+.imgContainer:hover .playButton{
+    display: block;
+}
+
+.textContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -140px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.textContainer h3 {
+    margin: 20px 0px 10px 0px;
+    color: #04bcff;
+    font-size: 14px;
+    width: 100%;
+    border-bottom: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.textContainer:hover h3 {
+    transform: translateX(calc(200px - 100%));
+}
+
+.textContainer p {
+    position: relative;
+    color: #1b1a1a;
+    background: #80808038;
+    padding: 5px 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 100%;
+    transform: translate(-100%, 0);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 375px) {
+    .aBox {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+}

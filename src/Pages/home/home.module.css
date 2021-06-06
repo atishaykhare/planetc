@@ -1,0 +1,9 @@
+.sections{
+    padding: 55px;
+}
+
+.sections h3{
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+    width: 5%;
+}
