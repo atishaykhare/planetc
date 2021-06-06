@@ -157,6 +157,10 @@
         padding: 0px 10px;
     }
 
+    .welcomeMsg {
+        margin: 0;
+    }
+
     .logo {
         height: 50px;
     }
@@ -177,12 +181,14 @@
 
     .nav-options.active {
         background: #000000;
-        left: 0;
+        left: 20%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 11;
         align-content: center;
         padding-left: 0px;
+        width: 80%;
+        height: 100%;
     }
 
     .menu-icon {
@@ -192,10 +198,10 @@
 
     .option {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 10vw;
-        padding: 30px 0px;
+        /*align-items: center;*/
+        justify-content: left;
+        /*height: 10vw;*/
+        padding: 10px 35px;
     }
 
     .sign-up {
@@ -218,6 +224,15 @@
     }
 
     .mobileLogin {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .loginContainer{
+        display: none;
+    }
+
+    .mobile-menu-welcome{
         display: flex;
         align-items: baseline;
     }
