@@ -53,7 +53,7 @@ const Watch = (props) => {
         <div>
             <ReactHlsPlayer
                 src="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
-                autoPlay={false}
+                autoPlay={true}
                 controls={true}
                 className={s.player}
             />
