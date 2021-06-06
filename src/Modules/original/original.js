@@ -3,6 +3,7 @@ import Showcase from "../../Components/showcase/showcase";
 import img1 from '../../Assets/Movies/img1.jpg'
 import img2 from '../../Assets/Movies/img2.jpg'
 import img3 from '../../Assets/Movies/img3.jpg'
+import ContentSlider from "../contentSlider";
 
 
 const Original = (props) => {
@@ -25,10 +26,7 @@ const Original = (props) => {
     ]
     return (
         <div>
-            <section className={s.sections}>
-                <h3>original</h3>
-                <Showcase sections={sections}/>
-            </section>
+            <ContentSlider {...props} sections={sections} heading="originals"/>
         </div>
     );
 };

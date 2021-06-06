@@ -48,7 +48,7 @@ const Showcase = (props) => {
         <div>
             <Slider {...settings}>
                 {sections.map(item => (
-                    <Slidecase {...item}/>
+                    <Slidecase key={item} {...item}/>
                 ))}
             </Slider>
         </div>

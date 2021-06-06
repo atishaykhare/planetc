@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Header from "./Components/header/header";
 import Watch from "./Pages/watch/watch";
+import Footer from "./Components/footer/footer";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -13,11 +14,16 @@ ReactDOM.render(
             <Header/>
             <Switch>
                 <Route path="/watch">
-                    <Watch/>
+                    <>
+                        <Watch/>
+                        <br/>
+                        <Footer/>
+                    </>
                 </Route>
                 <Route path="/">
                     <Home/>
                 </Route>
+
             </Switch>
         </BrowserRouter>
     </React.StrictMode>,

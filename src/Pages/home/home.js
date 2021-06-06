@@ -3,6 +3,7 @@ import Carousel from "../../Components/banner/Carousel";
 import s from './home.module.css'
 import Original from "../../Modules/original/original";
 import Trailers from "../../Modules/trailers/trailers";
+import Footer from "../../Components/footer/footer";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Carousel/>
             <Original s={s}/>
             <Trailers s={s}/>
+            <Footer/>
         </div>
     );
 };

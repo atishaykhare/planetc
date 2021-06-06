@@ -6,4 +6,5 @@
     text-transform: uppercase;
     border-bottom: 3px solid;
     width: 5%;
+    white-space: nowrap;
 }
