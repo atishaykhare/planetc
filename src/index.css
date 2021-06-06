@@ -34,3 +34,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bannerSlider .slick-prev {
+  left: 25px;
+  z-index: 10;
+}
+.bannerSlider .slick-next {
+  right: 25px;
+  z-index: 10;
+}

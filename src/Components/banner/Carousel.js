@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-
 import Slide from "./slide";
 import banner1 from '../../Assets/Banner/banner1.jpg'
 import banner2 from '../../Assets/Banner/banner2.jpg'
@@ -23,7 +22,7 @@ const Carousel = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
-        arrows: false,
+        arrows: true,
         adaptiveHeight: true,
 
         appendDots: dots => (
@@ -79,7 +78,7 @@ const Carousel = () => {
         ]
     };
     return (
-        <div style={{color: 'white'}}>
+        <div style={{color: 'white'}}  className="bannerSlider">
             <Slider {...settings}>
                 {images.map(item => <Slide key={item} img={item}/>)}
             </Slider>
