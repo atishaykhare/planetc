@@ -4,7 +4,21 @@
 
 .sections h3{
     text-transform: uppercase;
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
     width: 5%;
     white-space: nowrap;
+}
+
+@media screen and (max-width: 480px){
+    .sections{
+        padding: 20px 20px;
+    }
+
+    .sections h3{
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        width: 25%;
+        white-space: nowrap;
+        margin: 10px 0px 0px 0px;
+    }
 }

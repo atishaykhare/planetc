@@ -9,8 +9,7 @@ body {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./Assets/img.jpg");
-  background-size: contain;
+  background-color: #141414;
   color: white;
 }
 ::-webkit-scrollbar {
@@ -29,10 +28,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ac2626;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 .bannerSlider .slick-prev {
   left: 25px;

@@ -11,8 +11,8 @@
     margin: 0px 50px;
     object-fit: cover;
     position: relative;
-    animation-name: imageZoom;
-    animation-duration: 4s;
+    /*animation-name: imageZoom;*/
+    /*animation-duration: 4s;*/
 }
 
 /*@keyframes imageZoom {*/

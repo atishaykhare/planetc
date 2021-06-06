@@ -32,7 +32,7 @@
     transition: 500ms;
 }
 
-.playButton{
+.playButton {
     width: 100px;
     position: absolute;
     top: 50%;
@@ -45,16 +45,16 @@
     display: none;
 }
 
-.imgContainer:hover .innerSkew{
+.imgContainer:hover .innerSkew {
     transform: skew(0deg, 0deg);
 }
 
-.imgContainer:hover .playButton{
+.imgContainer:hover .playButton {
     display: block;
 }
 
 .textContainer {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     padding: 120px 20px 20px 20px;
     border-radius: 20px;
     background: #ffffff70;
@@ -91,6 +91,9 @@
     font-weight: bold;
     font-size: 11px;
 }
+textContainerMobile {
+     display: none;
+}
 
 @media screen and (max-width: 375px) {
     .aBox {
@@ -100,6 +103,56 @@
     }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 768px) {
+    .aBox {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+
+    .textContainer {
+        display: block;
+        background: transparent;
+        padding: 120px 0px 0px 0px;
+    }
+
+    .textContainer p {
+        display: none;
+    }
+
+    .imgContainer {
+        height: 150px;
+        width: 150px;
+    }
+
+    .innerSkew {
+        border-radius: 20px;
+        transform: skew(0deg, 0deg);
+        height: 150px;
+        width: 150px;
+    }
+
+    .innerSkew p {
+        position: absolute;
+        color: white;
+        font-size: 10px;
+        z-index: 9;
+        background: gray;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: 900;
+        margin: 10px;
+    }
+
+    .imgContainer img {
+        transform: skew(0deg, 0deg);
+        height: 150px;
+        margin: 0;
+    }
+    
+    .playButton {
+        width: 50px;
+        display: block;
+    }
 
 }

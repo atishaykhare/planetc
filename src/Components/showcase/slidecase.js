@@ -12,6 +12,7 @@ const Slidecase = (props) => {
                         <div className={s.playButton}>
                             <PlayButton/>
                         </div>
+                        <p>{duration}</p>
                         <img src={thumbnail}/>
                     </div>
                 </div>

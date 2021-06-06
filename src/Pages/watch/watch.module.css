@@ -21,10 +21,13 @@
     margin: 0 25px 0 0;
 }
 
-.playtime span:first-child, span:nth-child(2) {
+.playtime span:first-child {
     color: gray;
 }
 
+.playtime span:nth-child(2) {
+    color: gray;
+}
 span i {
     margin-right: 10px;
 }
@@ -50,6 +53,14 @@ span:hover i {
 }
 
 @media screen and (max-width: 480px){
+    .sections{
+        padding: 0px 20px;
+    }
+
+    .sections h3{
+        width: 25%;
+    }
+
     .player{
         width: 100%;
         height: auto;
