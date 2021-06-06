@@ -11,17 +11,17 @@ const Original = (props) => {
     const sections = [{
         thumbnail: img1,
         movie: 'The Vampire Dairies',
-        duration: '1 hrs 20 min'
+        duration: '28 Min'
     },
         {
             thumbnail: img2,
             movie: 'Game of thrones',
-            duration: '1 hrs 20 min'
+            duration: '20 Min'
         },
         {
             thumbnail: img3,
             movie: 'The Big Bang Theory',
-            duration: '1 hrs 20 min'
+            duration: '24 min'
         }
     ]
     return (

@@ -17,7 +17,7 @@ const Carousel = () => {
         className: "center",
         centerMode: true,
         lazyLoad: false,
-        autoplay: true,
+        autoplay: false,
         speed: 3000,
         // autoplaySpeed: 1000,
         slidesToShow: 1,
@@ -74,6 +74,7 @@ const Carousel = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
+                    arrows: false,
                 }
             }
         ]

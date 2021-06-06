@@ -11,7 +11,7 @@ const Showcase = (props) => {
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         initialSlide: 0,
         className: "center",
         responsive: [
@@ -19,7 +19,7 @@ const Showcase = (props) => {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -27,8 +27,8 @@ const Showcase = (props) => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                     initialSlide: 2,
                     className: "center",
                     centerMode: false,
@@ -37,10 +37,11 @@ const Showcase = (props) => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     className: "center",
                     centerMode: false,
+                    arrows:false,
                 }
             }
         ]

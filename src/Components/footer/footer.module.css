@@ -31,10 +31,9 @@
 
 @media screen and (max-width: 480px) {
     .footer {
-        background-color: #000000cf;
         display: flex;
         height: auto;
-        padding: 20px 50px;
+        padding: 20px 10px;
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
@@ -48,6 +47,11 @@
 
     .social {
         margin: 10px 0;
+    }
+
+    .social span:first-child {
+        font-size: large;
+        font-weight: 800;
     }
 
 }
