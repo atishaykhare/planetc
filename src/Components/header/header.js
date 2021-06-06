@@ -29,44 +29,46 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div className="loginContainer">
-                <i className="fa fa-search"/>
-                <div className="dropdown">
-                    <span className="dropbtn userCircle">U</span>
-                    <div className="dropdown-content">
-                        <div className="userDetail">
-                            <span className="userCircle">U</span>
-                            <div className="data">
-                                <span className="welcomeMsg">Welcome</span>
-                                <span>atishaykhare123@gmail.com</span>
+            <div className="mobileLogin">
+                <div className="loginContainer">
+                    <i className="fa fa-search"/>
+                    <div className="dropdown">
+                        <span className="dropbtn userCircle">U</span>
+                        <div className="dropdown-content">
+                            <div className="userDetail">
+                                <span className="userCircle">U</span>
+                                <div className="data">
+                                    <span className="welcomeMsg">Welcome</span>
+                                    <span>atishaykhare123@gmail.com</span>
+                                </div>
                             </div>
-                        </div>
-                        <hr/>
-                        <span className="dropdown-list">
+                            <hr/>
+                            <span className="dropdown-list">
                             <i className="fa fa-address-book-o" aria-hidden="true"></i>
                             <Link to="#">Profile</Link>
                         </span>
-                        <span className="dropdown-list">
+                            <span className="dropdown-list">
                             <i className="fa fa-list" aria-hidden="true"></i>
                             <Link to="#">Watchlist</Link>
                         </span>
-                        <span className="dropdown-list">
+                            <span className="dropdown-list">
                             <i className="fa fa-ticket" aria-hidden="true"></i>
                             <Link to="#">Ticket</Link>
                         </span>
-                        <span className="dropdown-list">
+                            <span className="dropdown-list">
                             <i className="fa fa-sign-out" aria-hidden="true"></i>
                             <Link to="#">Logout</Link>
                         </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="mobile-menu" onClick={handleClick}>
-                {click ? (
-                    <i className="fa fa-times"/>
-                ) : (
-                    <i className="fa fa-home"></i>
-                )}
+                <div className="mobile-menu" onClick={handleClick}>
+                    {click ? (
+                        <i className="fa fa-times"/>
+                    ) : (
+                        <i className="fa fa-bars"></i>
+                    )}
+                </div>
             </div>
         </div>
     );
