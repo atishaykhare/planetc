@@ -17,7 +17,7 @@ const Slidecase = (props) => {
                 </div>
             </div>
             <div className={s.textContainer}>
-                <h3>{movie}</h3>
+                <h4>{movie}</h4>
                 <p>{duration}</p>
             </div>
         </div>

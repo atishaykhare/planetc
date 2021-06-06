@@ -1,5 +1,4 @@
 import React from 'react';
-import Showcase from "../../Components/showcase/showcase";
 import img1 from '../../Assets/Movies/img4.jpg'
 import img2 from '../../Assets/Movies/img5.jpg'
 import img3 from '../../Assets/Movies/img6.jpg'
@@ -7,10 +6,10 @@ import img4 from '../../Assets/Movies/img7.jpg'
 import img5 from '../../Assets/Movies/img8.jpg'
 import img6 from '../../Assets/Movies/img9.jpg'
 import img7 from '../../Assets/Movies/img10.jpg'
+import ContentSlider from "../contentSlider";
 
 
 const Trailers = (props) => {
-    const {s} = props;
     const sections = [{
         thumbnail: img1,
         movie: 'Friends',
@@ -50,10 +49,7 @@ const Trailers = (props) => {
     ]
     return (
         <div>
-            <section className={s.sections}>
-                <h3>trailers</h3>
-                <Showcase sections={sections}/>
-            </section>
+            <ContentSlider {...props} sections={sections} heading="trailers"/>
         </div>
     );
 };

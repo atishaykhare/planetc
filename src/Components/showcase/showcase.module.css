@@ -62,7 +62,7 @@
     font-size: 14px;
 }
 
-.textContainer h3 {
+.textContainer h4 {
     margin: 20px 0px 10px 0px;
     color: #ffffff;
     font-size: 14px;
@@ -74,7 +74,7 @@
     text-align: left;
 }
 
-.textContainer:hover h3 {
+.textContainer:hover h4 {
     transform: translateX(calc(200px - 100%));
 }
 
