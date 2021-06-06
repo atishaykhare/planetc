@@ -19,13 +19,13 @@ const Header = () => {
 
                 <ul className={click ? "nav-options active" : "nav-options"}>
                     <li className="option">
-                        <Link to="/watch">ABOUT</Link>
+                        <Link to="/watch" onClick={handleClick}>ABOUT</Link>
                     </li>
                     <li className="option">
-                        <Link to="/watch">CONTACT</Link>
+                        <Link to="/watch" onClick={handleClick}>CONTACT</Link>
                     </li>
                     <li className="option">
-                        <Link to="/watch">BLOG</Link>
+                        <Link to="/watch" onClick={handleClick}>BLOG</Link>
                     </li>
                 </ul>
             </div>

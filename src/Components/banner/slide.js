@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Carousel.module.css'
 import PlayButton from "../playButton/playButton";
+import {Link} from "react-router-dom";
 
 const Slide = (props) => {
     const {img} = props;
@@ -12,7 +13,9 @@ const Slide = (props) => {
                     <h5>Star Wars The Force Awakens</h5>
                 </div>
                 <div className={s.playBtn}>
-                    <PlayButton/>
+                    <Link to="/watch">
+                        <PlayButton/>
+                    </Link>
                 </div>
             </div>
         </div>
