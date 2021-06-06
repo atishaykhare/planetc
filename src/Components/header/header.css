@@ -149,7 +149,9 @@
 .mobile-menu {
     display: none;
 }
-
+.onMobile{
+    display: none;
+}
 
 @media (max-width: 648px) {
     /*Mobile View */
@@ -157,6 +159,9 @@
         padding: 0px 10px;
     }
 
+    .onMobile{
+        display: block  ;
+    }
     .welcomeMsg {
         margin: 0;
     }
@@ -234,7 +239,7 @@
 
     .mobile-menu-welcome{
         display: flex;
-        align-items: baseline;
+        align-items: center;
     }
 
 }

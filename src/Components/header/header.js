@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './header.css';
 import Logo from '../../Assets/logo.png';
 import {Link} from "react-router-dom";
+import s from "../footer/footer.module.css";
 
 const Header = () => {
     const [click, setClick] = useState(false);
@@ -18,15 +19,44 @@ const Header = () => {
                 </div>
 
                 <ul className={click ? "nav-options active" : "nav-options"}>
+                   <div className="onMobile">
+                    <div className="mobile-menu-welcome">
+                        <span className="userCircle">U</span>
+                    <div>
+                        <p className="welcomeMsg">Welcome</p>
+
+                        <small>atishaykhare123@gmail.com</small>
+                    </div>
+                    </div>
+                    <div>
+                        <hr/>
+                        <li className="option">
+                            <Link to="#">Profile</Link>
+                        </li>
+                        <li className="option">
+                            <Link to="#">Watchlist</Link>
+                        </li>
+                        <li className="option">
+                            <Link to="#">Ticket</Link>
+                        </li>
+                        <li className="option">
+                            <Link to="#">Logout</Link>
+                        </li>
+                    </div>
+                       <hr/>
+                   </div>
+
                     <li className="option">
-                        <Link to="/watch" onClick={handleClick}>ABOUT</Link>
+                        <Link to="/watch" onClick={handleClick}>About</Link>
                     </li>
                     <li className="option">
-                        <Link to="/watch" onClick={handleClick}>CONTACT</Link>
+                        <Link to="/watch" onClick={handleClick}>Contact</Link>
                     </li>
                     <li className="option">
-                        <Link to="/watch" onClick={handleClick}>BLOG</Link>
+                        <Link to="/watch" onClick={handleClick}>Blog</Link>
                     </li>
+
+
                 </ul>
             </div>
             <div className="mobileLogin">
