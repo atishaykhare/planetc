@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './header.css';
 import Logo from '../../Assets/logo.png';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const [click, setClick] = useState(false);
@@ -11,20 +12,20 @@ const Header = () => {
         <div className="header">
             <div className="logo-nav">
                 <div className="logo-container">
-                    <a href="#">
+                    <Link to="/">
                         <img src={Logo} className="logo"/>
-                    </a>
+                    </Link>
                 </div>
 
                 <ul className={click ? "nav-options active" : "nav-options"}>
                     <li className="option">
-                        <a href="#">ABOUT</a>
+                        <Link to="/watch">ABOUT</Link>
                     </li>
                     <li className="option">
-                        <a href="#">CONTACT</a>
+                        <Link to="/watch">CONTACT</Link>
                     </li>
                     <li className="option">
-                        <a href="#">BLOG</a>
+                        <Link to="/watch">BLOG</Link>
                     </li>
                 </ul>
             </div>
@@ -43,19 +44,19 @@ const Header = () => {
                         <hr/>
                         <span className="dropdown-list">
                             <i className="fa fa-address-book-o" aria-hidden="true"></i>
-                            <a href="#">Profile</a>
+                            <Link to="#">Profile</Link>
                         </span>
                         <span className="dropdown-list">
                             <i className="fa fa-list" aria-hidden="true"></i>
-                            <a href="#">Watchlist</a>
+                            <Link to="#">Watchlist</Link>
                         </span>
                         <span className="dropdown-list">
                             <i className="fa fa-ticket" aria-hidden="true"></i>
-                            <a href="#">Ticket</a>
+                            <Link to="#">Ticket</Link>
                         </span>
                         <span className="dropdown-list">
                             <i className="fa fa-sign-out" aria-hidden="true"></i>
-                            <a href="#">Logout</a>
+                            <Link to="#">Logout</Link>
                         </span>
                     </div>
                 </div>
