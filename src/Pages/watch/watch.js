@@ -73,7 +73,7 @@ const Watch = (props) => {
                     <span><i className="fa fa-list"/> Add to Watchlist </span>
                 </div>
                 <div>
-                    <p className={s.description}>
+                    <p className={s.descriptions}>
                         The Last Airbender is set in a world where human civilization consists of four nations, named
                         after the four classical elements: the Water Tribes, the Earth Kingdom, the Fire Nation, and the
                         Air Nomads. The Avatar is the only person with the ability to bend all four elements.

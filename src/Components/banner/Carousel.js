@@ -2,10 +2,10 @@ import React from 'react';
 import Slider from "react-slick";
 
 import Slide from "./slide";
-import banner1 from '../../Assets/Banner/banner1.jpg'
-import banner2 from '../../Assets/Banner/banner2.jpg'
-import banner3 from '../../Assets/Banner/banner3.jpg'
-import banner4 from '../../Assets/Banner/banner4.jpg'
+import banner1 from '../../Assets/Banner/banner1.png'
+import banner2 from '../../Assets/Banner/banner2.png'
+import banner3 from '../../Assets/Banner/banner3.png'
+import banner4 from '../../Assets/Banner/banner4.png'
 
 
 const Carousel = () => {

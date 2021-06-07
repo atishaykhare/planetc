@@ -32,10 +32,6 @@
     list-style-type: none;
 }
 
-.mobile-option {
-    display: none;
-}
-
 .option a {
     color: #ffffff;
     text-decoration: none;
@@ -87,7 +83,6 @@
     z-index: 12;
     top: 65px;
     right: 35px;
-    transition: .5s;
 }
 
 .dropdown-content:before {
@@ -133,13 +128,11 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    transition: .5s;
 }
 
 .dropdown-content .dropdown-list:hover {
     background-color: #1b1a1a;
     border-left: 1px solid #ffffff;
-    transition: .5s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -149,9 +142,6 @@
 .mobile-menu {
     display: none;
 }
-.onMobile{
-    display: none;
-}
 
 @media (max-width: 648px) {
     /*Mobile View */
@@ -159,9 +149,6 @@
         padding: 0px 10px;
     }
 
-    .onMobile{
-        display: block  ;
-    }
     .welcomeMsg {
         margin: 0;
     }
@@ -233,11 +220,11 @@
         align-items: baseline;
     }
 
-    .loginContainer{
+    .loginContainer {
         display: none;
     }
 
-    .mobile-menu-welcome{
+    .mobile-menu-welcome {
         display: flex;
         align-items: center;
     }

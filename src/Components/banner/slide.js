@@ -8,7 +8,7 @@ const Slide = (props) => {
     return (
         <div>
             <div className={s.container}>
-                <img src={img} className={s.slideImg}/>
+                <img src={img} className={s.slideImg} alt={img}/>
                 <div className={s.sliderText}>
                     <h5>Star Wars The Force Awakens</h5>
                 </div>

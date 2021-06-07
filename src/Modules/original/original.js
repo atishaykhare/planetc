@@ -1,6 +1,5 @@
 import React from 'react';
-import Showcase from "../../Components/showcase/showcase";
-import img1 from '../../Assets/Movies/img1.jpg'
+import img1 from '../../Assets/Movies/img1.png'
 import img2 from '../../Assets/Movies/img2.jpg'
 import img3 from '../../Assets/Movies/img3.jpg'
 import ContentSlider from "../contentSlider";

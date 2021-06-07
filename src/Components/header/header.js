@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './header.css';
 import Logo from '../../Assets/logo.png';
 import {Link} from "react-router-dom";
-import s from "../footer/footer.module.css";
 
 const Header = () => {
     const [click, setClick] = useState(false);
@@ -19,7 +18,7 @@ const Header = () => {
                 </div>
 
                 <ul className={click ? "nav-options active" : "nav-options"}>
-                   <div className="onMobile">
+                   <div className="mobile-menu">
                     <div className="mobile-menu-welcome">
                         <span className="userCircle">U</span>
                     <div>
